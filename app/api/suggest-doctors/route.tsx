@@ -40,6 +40,7 @@ export async function POST(req: NextRequest) {
             "image": "${selectedAgent.image}",
             "description": "${selectedAgent.description}",
             "agentPrompt": "${selectedAgent.agentPrompt}",
+            "voiceId": "${selectedAgent.voiceId}",
             "message": string
           }`
         },
@@ -57,7 +58,14 @@ export async function POST(req: NextRequest) {
     try {
       jsonResp = JSON.parse(Resp);
     } catch {
-      jsonResp = { specialist: selectedAgent.specialist, message: rawResp };
+       jsonResp = { 
+    specialist: selectedAgent.specialist, 
+    image: selectedAgent.image,
+    description: selectedAgent.description,
+    agentPrompt: selectedAgent.agentPrompt,
+    voiceId: selectedAgent.voiceId,
+    message: rawResp 
+  };
     }
 
     return NextResponse.json([jsonResp], { status: 200 });

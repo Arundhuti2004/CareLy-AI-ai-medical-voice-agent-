@@ -9,7 +9,8 @@ export type DoctorAgent = {
     description: string;
     image?: string;
     agentPrompt: string;
-    
+    voiceId?: string;
+    provider?: string;
 }
 
 type props={
