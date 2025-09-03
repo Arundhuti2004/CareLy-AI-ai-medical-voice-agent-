@@ -152,7 +152,7 @@ try {
       vapi.on('message', onMessage);
   
       
-  
+      //@ts-ignore
       await vapi.start(VapiAgentConfig);
     } 
 } catch (error) {
