@@ -55,7 +55,7 @@ const   Page = () => {
     console.log(data);
     setSessionDetails(data);
 
-  };
+  }
 
 // Define listener functions outside
 const onCallStart = () => {
@@ -162,7 +162,7 @@ try {
 
 // Later, when ending the call
 const endCall = async () => {
-  setLoading(true);
+//  setLoading(true);
   if (!vapiInstance) return;
 
   vapiInstance.stop();
@@ -174,12 +174,12 @@ const endCall = async () => {
   setCallStarted(false);
   setVapiInstance(null);
 
-  const result = await GenerateReport();
+  //const result = await GenerateReport();
 
-  setLoading(false);
+  //setLoading(false);
 };
 
-  const GenerateReport=async()=>{
+/*  const GenerateReport=async()=>{
     const result = await axios.post('/api/medical-report',{
 
       messages: messages,
@@ -190,7 +190,7 @@ const endCall = async () => {
       console.log(result.data);
       return result.data;
 
-}
+}*/
 
 
 

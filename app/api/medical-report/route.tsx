@@ -1,5 +1,5 @@
 
-import { AIDoctorAgents } from "@/app/shared/list";
+/*import { AIDoctorAgents } from "@/app/shared/list";
 import { db } from "@/config/db";
 import { openai } from "@/config/OpenAiModel";
 import { sessionsChatTable } from "@/config/schema";
@@ -115,4 +115,4 @@ export async function POST(req: NextRequest) {
     console.error("Server error:", error);
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
-}
+}*/
