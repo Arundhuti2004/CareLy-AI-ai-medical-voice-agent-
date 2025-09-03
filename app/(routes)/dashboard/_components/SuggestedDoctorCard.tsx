@@ -15,7 +15,8 @@ const SuggestedDoctorCard = ({ doctorAgent , setSelectedDoctor , selectedDoctor}
        width={70} height={70}  
        className='rounded-4xl w-[50px] h-[50px] object-cover' />
 
-       <h2 className='font-bold text-sm'>{doctorAgent?.specialist}</h2>
+      {/* <h2 className='font-bold text-sm'>{doctorAgent?.specialist}</h2> */}
+
        <p className='text-xs'>{doctorAgent?.description}</p>
     </div>
   )

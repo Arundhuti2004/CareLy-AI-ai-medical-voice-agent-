@@ -23,7 +23,8 @@ const DoctorAgentCard = ({ doctorAgent }: props) => {
     <div>
         <Image src={(doctorAgent.image || '/placeholder.png') as string} alt={doctorAgent.specialist} width={200} height={300}
         className='w-full h-[250px] object-cover' />
-      <h2 className='font-bold mt-1'>{doctorAgent.specialist}</h2>
+       <h2 className='font-bold mt-1'>{doctorAgent.specialist}</h2> 
+      
       <p className='line-clamp-2 text-sm'>{doctorAgent.description}</p>
       <div className='w-full mt-2 text-center'><AddNewSessionDialog /></div>
     </div>

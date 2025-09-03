@@ -211,7 +211,7 @@ const endCall = async () => {
     {sessionDetails &&
     <div className='flex items-center flex-col mt-10'>
       <Image src={sessionDetails.selectedDoctor.image || '/placeholder.png'} alt={sessionDetails?.selectedDoctor?.specialist || 'Doctor'} width={120} height={120} className='h-[100px] w-[100px] object-cover rounded-3xl'/>
-      <h2 className='mt-2 text-lg'>{sessionDetails?.selectedDoctor?.specialist || 'Unknown Doctor'}</h2>
+      <h2 className='mt-2 text-lg'>{ 'Doctor'}</h2>
       <p className=' text-sm text-gray-400'>AI Medical Voice Agent</p>
 
 
