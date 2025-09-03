@@ -30,7 +30,7 @@ export default function HeroSectionOne() {
       <div className="px-4 py-10 md:py-20">
         <h1
           className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
-          {"Launch your website in hours, not days"
+          {"👨‍⚕️Your AI doctor, ready to assist in hours"
             .split(" ")
             .map((word, index) => (
               <motion.span
@@ -59,9 +59,7 @@ export default function HeroSectionOne() {
             delay: 0.8,
           }}
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400">
-          With AI, you can launch your website in hours, not days. Try our best
-          in class, state of the art, cutting edge AI tools to get your website
-          up.
+          🧠🩺Launch Your Medical Voice Assistant in Hours, Powered by Cutting-Edge AI
         </motion.p>
         <Link href={"/sign-in"}>
         <motion.div
@@ -100,7 +98,7 @@ export default function HeroSectionOne() {
           <div
             className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
             <img
-              src="https://assets.aceternity.com/pro/aceternity-landing.webp"
+              src="https://www.onlinegmptraining.com/wp-content/uploads/2022/11/artificial-intelligence-use-in-medical-devices.jpg"
               alt="Landing page preview"
               className="aspect-[16/9] h-auto w-full object-cover"
               height={1000}
@@ -120,7 +118,7 @@ const Navbar = () => {
       <div className="flex items-center gap-2">
         <div
           className="size-7 rounded-full bg-gradient-to-br from-violet-500 to-pink-500" />
-        <h1 className="text-base font-bold md:text-2xl">Aceternity UI</h1>
+        <h1 className="text-base font-bold md:text-2xl">CareLy</h1>
       </div>
       {!user ?
       <Link href={"/sign-in"}><button
@@ -129,7 +127,9 @@ const Navbar = () => {
       </button></Link> :
       <div className="flex items-center gap-4">
         <UserButton />
-        <Button>Dashboard</Button>
+        <Link href="/dashboard">
+        <Button href={"/dashboard"}>Dashboard</Button>
+        </Link>
       </div>
 }
 

@@ -24,7 +24,7 @@ type SessionDetails={
   voiceId:string
 }
 
-type message={
+type Message={
   role:string,
   text:string,
   transcript?: string;
@@ -41,7 +41,7 @@ const   Page = () => {
   const [vapiInstance, setVapiInstance] = useState<any>();
   const [currentRole, setCurrentRole] = useState<string | null>(null);
   const [liveTranscript, setLiveTranscript] = useState<string>();
-  const [messages, setMessages] = useState<messages[]>([]);
+  const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const router= useRouter();
   useEffect(() => {
